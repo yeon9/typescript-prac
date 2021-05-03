@@ -1,13 +1,13 @@
-// 불리언
+/* 불리언 */
 let isDone: boolean = false
 
-// 숫자
+/* 숫자 */
 let decimal: number = 6
 let hex: number = 0xf00d
 let binary: number = 0b1010
 let octal: number = 0o744
 
-// 문자열
+/* 문자열 */
 let color: string = 'blue'
 color = 'red'
 
@@ -16,11 +16,11 @@ let age: number = 24
 let sentence: string = `Hello, my name is ${fullName}.
 I'll be ${age + 1} years old next month.`
 
-// 배열
+/* 배열 */
 let list1: number[] = [1, 2, 3]
 let list2: Array<number> = [1, 2, 3]
 
-// 튜플
+/* 튜플 */
 let x: [string, number]
 
 x = ['hello', 10]
@@ -34,7 +34,7 @@ y = ['i am', 25, 'years old']
 
 console.log(y[2].toString())
 
-// Enum
+/* Enum */
 enum Color1 {
 	Red,
 	Green,
@@ -65,7 +65,7 @@ console.log(`colorName(number) : ${Color3.Green}`) // 5
  * Color[0], Color[2], Color[4] => 문자
  */
 
-// Any
+/* Any */
 let notSure: any = 4
 //notSure = 'maybe a string instead'
 //notSure = false
@@ -100,9 +100,9 @@ let n: null = null
  * 유니언 타입 string | null | undefined 사용
  */
 
-// never
-// 절대 발생 할 수 없는 타입, 항상 오류를 발생시키거나 절대 반환하지 않는 반환 타입
-
+/* never
+		절대 발생 할 수 없는 타입, 항상 오류를 발생시키거나 절대 반환하지 않는 반환 타입
+*/
 function error(message: string): void {
 	throw new Error(message)
 }
@@ -125,8 +125,7 @@ const format = (value: string | number) => {
 
 // never는 throw exception, never return 의 경우
 
-// Object
-// number, string, boolean, bigint, symbol, null, undefined가 아닌 나머지
+// Objec는 number, string, boolean, bigint, symbol, null, undefined가 아닌 나머지
 
 /**
  *  declare 
@@ -144,7 +143,7 @@ Object.create(null)
 // create(false)  : boolean
 // create(undefined)   : undefined
 
-// type assertions
+/* type assertions */
 // <1> angle-bracket 문법
 let someValue: any = 'this is a string'
 let strLength: number = (<string>someValue).length
